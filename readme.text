@@ -1,0 +1,40 @@
+Video Quality Check:
+--------------------------------------------------
+
+Module Output:
+---------------------------------------------------
+a.Video Channel
+b.Video FPS
+c.Video Frame Widht
+d.Video Frame Height
+
+----------------------------------------------------
+How to run the Module?
+
+----------------------------------------------------
+Input Requirement:
+1.Camera: /dev/video0 or /dev/video1 or /dev/video2
+-----------------------------------------------------
+
+Step 1:
+Compile:
+
+g++ -I /usr/local/include/opencv4/ -L/usr/local/lib -o test test.cpp -lopencv_core -lopencv_highgui -lopencv_imgcodecs -lopencv_imgproc -lopencv_videoio 
+
+Step 2:
+Run:./test /dev/video0
+
+Output:
+--------------------------------------------------
+
+The Output stored in realTimeData.text file
+
+
+Software requirements:
+---------------------------------------------------
+1.C++
+2.OpenCV
+
+
+
+

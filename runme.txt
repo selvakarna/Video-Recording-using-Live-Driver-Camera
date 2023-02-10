@@ -1,0 +1,10 @@
+
+Step 1:
+Compile:
+ g++ -I /usr/local/include/opencv4/ -L/usr/local/lib -o livecap livecap.cpp -lopencv_core -lopencv_highgui -lopencv_imgcodecs -lopencv_imgproc -lopencv_videoio -lopencv_cudaimgproc
+
+Step 2:
+
+Run:
+./vsk /dev/video0
+
